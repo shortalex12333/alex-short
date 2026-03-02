@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { ArrowRight, ExternalLink } from 'lucide-react'
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 
@@ -9,211 +8,221 @@ export default function Home() {
       <Navigation />
 
       <main className="pt-16">
-        {/* Hero */}
-        <section className="min-h-[90vh] flex items-center relative">
-          {/* Subtle grid */}
-          <div
-            className="absolute inset-0 opacity-[0.02]"
-            style={{
-              backgroundImage: `
-                linear-gradient(to right, var(--accent-blue) 1px, transparent 1px),
-                linear-gradient(to bottom, var(--accent-blue) 1px, transparent 1px)
-              `,
-              backgroundSize: '80px 80px'
-            }}
-          />
-
-          <div className="max-w-content mx-auto px-8 py-24 relative z-10">
-            <h1 className="font-display text-display font-light text-text-primary mb-6">
+        {/* Header - Minimal, institutional */}
+        <section className="border-b border-border-subtle">
+          <div className="max-w-4xl mx-auto px-8 py-16">
+            <div className="text-caption text-text-tertiary tracking-wider uppercase mb-3">
+              Professional Record
+            </div>
+            <h1 className="font-display text-4xl font-light text-text-primary mb-2">
               Alex Short
             </h1>
-            <h2 className="text-heading font-display font-normal text-text-secondary mb-8">
+            <div className="text-body text-text-secondary">
               Yacht Insurance Risk Analyst
-            </h2>
-            <p className="text-body text-text-body max-w-2xl mb-10 leading-relaxed">
-              Structured analysis of yacht insurance policy architecture, underwriting triggers,
-              and exclusion mechanics. Former superyacht ETO bringing operational perspective
-              to marine insurance risk documentation.
-            </p>
-            <Link
-              href="https://myyachtsinsurance.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-accent-blue text-label font-medium group"
-            >
-              <span className="group-hover:underline">View Research at MYI</span>
-              <ExternalLink className="w-4 h-4" />
-            </Link>
-          </div>
-        </section>
-
-        {/* Focus Areas */}
-        <section className="border-t border-border-subtle">
-          <div className="max-w-content mx-auto px-8 py-24">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <div className="border-t-2 border-accent-blue pt-8">
-                <h3 className="font-display text-subhead font-medium text-text-primary mb-4">
-                  Policy Architecture
-                </h3>
-                <p className="text-body text-text-secondary leading-relaxed">
-                  Analysis of navigational warranties, lay-up provisions, and territorial limits.
-                  Examination of schedule structures, deductible frameworks, and premium calculation methodologies.
-                </p>
-              </div>
-
-              <div className="border-t-2 border-accent-blue pt-8">
-                <h3 className="font-display text-subhead font-medium text-text-primary mb-4">
-                  Underwriting Triggers
-                </h3>
-                <p className="text-body text-text-secondary leading-relaxed">
-                  Assessment of material change provisions, warranty breach implications, and disclosure requirements.
-                  Review of survey conditions, crew qualifications, and operational parameter effects.
-                </p>
-              </div>
-
-              <div className="border-t-2 border-accent-blue pt-8">
-                <h3 className="font-display text-subhead font-medium text-text-primary mb-4">
-                  Exclusion Mechanics
-                </h3>
-                <p className="text-body text-text-secondary leading-relaxed">
-                  Evaluation of insured perils, standard exclusions, and documentation requirements.
-                  Study of salvage provisions, total loss criteria, and hull-machinery-liability interactions.
-                </p>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* Methodology Preview */}
-        <section className="border-t border-border-subtle">
-          <div className="max-w-content mx-auto px-8 py-24">
-            <div className="grid grid-cols-12 gap-16">
-              <div className="col-span-12 md:col-span-4">
-                <h2 className="font-display text-heading font-normal text-text-primary">
-                  Analytical Framework
-                </h2>
-              </div>
-              <div className="col-span-12 md:col-span-8">
-                <div className="space-y-6">
-                  <div className="pb-6 border-b border-border-subtle">
-                    <p className="text-body text-text-body leading-relaxed">
-                      All analysis begins with complete policy document review, including schedules,
-                      endorsements, and incorporated clauses. Each coverage element is mapped to
-                      specific policy sections with direct clause references.
-                    </p>
-                  </div>
+        {/* Document Body */}
+        <div className="max-w-4xl mx-auto px-8 py-12">
 
-                  <div className="pb-6 border-b border-border-subtle">
-                    <p className="text-body text-text-body leading-relaxed">
-                      Trigger conditions are isolated and documented with supporting policy language.
-                      Exclusion clauses are evaluated against standard Institute Clauses and relevant case precedent.
-                    </p>
-                  </div>
-
-                  <div className="pb-6 border-b border-border-subtle">
-                    <p className="text-body text-text-body leading-relaxed">
-                      No interpretation is offered without direct citation. Where ambiguity exists,
-                      contra proferentem principles are noted with alternative readings documented.
-                    </p>
-                  </div>
-
-                  <div className="pt-2">
-                    <Link
-                      href="/methodology"
-                      className="inline-flex items-center gap-2 text-accent-blue text-label font-medium group"
-                    >
-                      <span className="group-hover:underline">Full Methodology</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
+          {/* 1. Summary */}
+          <section className="mb-12">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">1.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Summary
+              </h2>
             </div>
-          </div>
-        </section>
-
-        {/* Background */}
-        <section className="border-t border-border-subtle">
-          <div className="max-w-content mx-auto px-8 py-24">
-            <h2 className="font-display text-heading font-normal text-text-primary mb-16">
-              Background
-            </h2>
-
-            <div className="space-y-12">
-              <div className="flex gap-8 border-l-2 border-accent-blue pl-8">
-                <div className="flex-shrink-0 w-32 text-caption text-text-secondary font-medium">
-                  2025–Present
-                </div>
-                <div className="flex-1">
-                  <div className="text-subhead font-medium text-text-primary mb-2">
-                    Independent Risk Analyst
-                  </div>
-                  <p className="text-body text-text-secondary leading-relaxed">
-                    Yacht insurance policy analysis and risk documentation. Analytical contributor
-                    to MyYachtsInsurance.com. Shore-side transition from operational superyacht career.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-8 border-l-2 border-border-subtle pl-8">
-                <div className="flex-shrink-0 w-32 text-caption text-text-secondary font-medium">
-                  2023–2025
-                </div>
-                <div className="flex-1">
-                  <div className="text-subhead font-medium text-text-primary mb-2">
-                    Head of Department — Superyachts
-                  </div>
-                  <p className="text-body text-text-secondary leading-relaxed">
-                    Qualified ETO serving as Head of Department across 5 superyachts, including
-                    some of the world&apos;s most prestigious vessels. Engineering systems management,
-                    refit oversight, and technical compliance.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-8 border-l-2 border-border-subtle pl-8">
-                <div className="flex-shrink-0 w-32 text-caption text-text-secondary font-medium">
-                  2020–2023
-                </div>
-                <div className="flex-1">
-                  <div className="text-subhead font-medium text-text-primary mb-2">
-                    Maritime Industry Entry
-                  </div>
-                  <p className="text-body text-text-secondary leading-relaxed">
-                    Entered maritime industry. Progressive qualifications leading to ETO certification
-                    and transition to superyacht sector.
-                  </p>
-                </div>
-              </div>
+            <div className="pl-10">
+              <p className="text-body text-text-body leading-relaxed">
+                Independent analyst specialising in yacht insurance policy documentation.
+                Former superyacht ETO with operational experience across engineering systems,
+                refit management, and technical compliance. Analysis published at{' '}
+                <Link
+                  href="https://myyachtsinsurance.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-text-primary underline underline-offset-2"
+                >
+                  myyachtsinsurance.com
+                </Link>.
+              </p>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Research Link */}
-        <section className="border-t border-border-subtle">
-          <div className="max-w-content mx-auto px-8 py-24">
-            <div className="flex items-center justify-between">
+          {/* 2. Scope of Work */}
+          <section className="mb-12">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">2.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Scope of Work
+              </h2>
+            </div>
+            <div className="pl-10 space-y-6">
               <div>
-                <h2 className="font-display text-heading font-normal text-text-primary mb-4">
-                  Published Analysis
-                </h2>
-                <p className="text-body text-text-secondary max-w-xl">
-                  Technical assessments of yacht insurance policy structures and coverage mechanics
-                  are published at MyYachtsInsurance.com.
+                <h3 className="text-body font-medium text-text-primary mb-1">
+                  2.1 Policy Architecture
+                </h3>
+                <p className="text-body text-text-secondary leading-relaxed">
+                  Navigational warranties. Lay-up provisions. Territorial limits.
+                  Schedule structures. Deductible frameworks.
                 </p>
               </div>
-              <Link
-                href="https://myyachtsinsurance.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-surface-primary border border-border-default rounded-lg text-label font-medium text-text-primary hover:bg-surface-hover transition-colors"
-              >
-                <span>View Research</span>
-                <ExternalLink className="w-4 h-4" />
-              </Link>
+              <div>
+                <h3 className="text-body font-medium text-text-primary mb-1">
+                  2.2 Underwriting Triggers
+                </h3>
+                <p className="text-body text-text-secondary leading-relaxed">
+                  Material change provisions. Warranty breach mechanics.
+                  Disclosure requirements. Survey conditions. Crew qualifications.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-body font-medium text-text-primary mb-1">
+                  2.3 Exclusion Analysis
+                </h3>
+                <p className="text-body text-text-secondary leading-relaxed">
+                  Insured perils. Standard exclusions. Salvage provisions.
+                  Total loss criteria. Hull-machinery-liability interactions.
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          {/* 3. Methodology */}
+          <section className="mb-12">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">3.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Methodology
+              </h2>
+            </div>
+            <div className="pl-10 space-y-4">
+              <div className="flex gap-3">
+                <span className="text-caption text-text-tertiary">3.1</span>
+                <p className="text-body text-text-secondary">
+                  Complete policy document review including schedules and endorsements.
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <span className="text-caption text-text-tertiary">3.2</span>
+                <p className="text-body text-text-secondary">
+                  Coverage mapping to specific policy sections with clause references.
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <span className="text-caption text-text-tertiary">3.3</span>
+                <p className="text-body text-text-secondary">
+                  Exclusion evaluation against Institute Clauses.
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <span className="text-caption text-text-tertiary">3.4</span>
+                <p className="text-body text-text-secondary">
+                  No interpretation without direct citation.
+                </p>
+              </div>
+              <div className="mt-4">
+                <Link
+                  href="/methodology"
+                  className="text-body text-text-secondary underline underline-offset-2 hover:text-text-primary"
+                >
+                  Full methodology documentation →
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          {/* 4. Background */}
+          <section className="mb-12">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">4.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Background
+              </h2>
+            </div>
+            <div className="pl-10">
+              <table className="w-full text-body">
+                <tbody>
+                  <tr className="border-b border-border-subtle">
+                    <td className="py-3 pr-8 text-text-tertiary whitespace-nowrap align-top w-32">
+                      2025–Present
+                    </td>
+                    <td className="py-3 text-text-primary font-medium align-top w-48">
+                      Risk Analyst
+                    </td>
+                    <td className="py-3 text-text-secondary align-top">
+                      Independent. Policy documentation and analysis.
+                    </td>
+                  </tr>
+                  <tr className="border-b border-border-subtle">
+                    <td className="py-3 pr-8 text-text-tertiary whitespace-nowrap align-top">
+                      2023–2025
+                    </td>
+                    <td className="py-3 text-text-primary font-medium align-top">
+                      Head of Department
+                    </td>
+                    <td className="py-3 text-text-secondary align-top">
+                      ETO across 5 superyachts. Engineering systems, refit oversight, technical compliance.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-8 text-text-tertiary whitespace-nowrap align-top">
+                      2020–2023
+                    </td>
+                    <td className="py-3 text-text-primary font-medium align-top">
+                      Maritime Entry
+                    </td>
+                    <td className="py-3 text-text-secondary align-top">
+                      ETO qualification. Transition to superyacht sector.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          {/* 5. Limitations */}
+          <section className="mb-12">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">5.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Limitations
+              </h2>
+            </div>
+            <div className="pl-10 space-y-3">
+              <p className="text-body text-text-secondary leading-relaxed">
+                Analysis only. No brokerage services. No legal advice.
+              </p>
+              <p className="text-body text-text-secondary leading-relaxed">
+                For policy placement, consult a licensed marine insurance broker.
+                For coverage disputes, consult maritime legal counsel.
+              </p>
+            </div>
+          </section>
+
+          {/* 6. Contact */}
+          <section className="mb-12">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">6.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Contact
+              </h2>
+            </div>
+            <div className="pl-10">
+              <p className="text-body text-text-secondary">
+                <Link
+                  href="mailto:alex@alex-short.com"
+                  className="text-text-primary underline underline-offset-2"
+                >
+                  alex@alex-short.com
+                </Link>
+              </p>
+            </div>
+          </section>
+
+        </div>
       </main>
 
       <Footer />

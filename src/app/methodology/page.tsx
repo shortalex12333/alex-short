@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Methodology',
-  description: 'Structured protocols for yacht insurance policy analysis and risk documentation. Analytical framework, policy review process, and documentation standards.',
+  description: 'Policy review protocol and documentation standards for yacht insurance analysis.',
 }
 
 export default function Methodology() {
@@ -16,141 +15,294 @@ export default function Methodology() {
 
       <main className="pt-16">
         {/* Header */}
-        <section className="max-w-content mx-auto px-8 pt-12 pb-8">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-accent-blue text-label font-medium mb-12 hover:opacity-80 transition-opacity"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back
-          </Link>
-        </section>
-
-        {/* Content */}
-        <section className="max-w-content mx-auto px-8 pb-24">
-          <h1 className="font-display text-title font-light text-text-primary mb-6">
-            Methodology
-          </h1>
-          <p className="text-subhead text-text-secondary max-w-2xl mb-20">
-            Structured protocols for yacht insurance policy analysis and risk documentation.
-          </p>
-
-          <div className="space-y-20">
-            {/* Section 1 */}
-            <div className="border-t-2 border-accent-blue pt-12">
-              <h2 className="font-display text-heading font-normal text-text-primary mb-8">
-                Analytical Framework
-              </h2>
-              <div className="space-y-6 max-w-3xl">
-                <p className="text-body text-text-body leading-relaxed">
-                  All policy analysis begins with complete document review, including schedules,
-                  endorsements, and incorporated clauses. Each coverage element is mapped to
-                  specific policy sections with clause and page references. Interpretations
-                  reference established case law, standard market wordings (Institute Clauses),
-                  and regulatory guidance where applicable.
-                </p>
-                <p className="text-body text-text-body leading-relaxed">
-                  No opinion is offered on coverage without direct citation to policy language.
-                  Where ambiguity exists, contra proferentem principles are noted, and alternative
-                  interpretations are documented with supporting precedent.
-                </p>
-              </div>
+        <section className="border-b border-border-subtle">
+          <div className="max-w-4xl mx-auto px-8 py-16">
+            <div className="text-caption text-text-tertiary tracking-wider uppercase mb-3">
+              Reference Document
             </div>
-
-            {/* Section 2 */}
-            <div className="border-t border-border-subtle pt-12">
-              <h2 className="font-display text-heading font-normal text-text-primary mb-8">
-                Policy Review Protocol
-              </h2>
-              <div className="space-y-8 max-w-3xl">
-                <div className="pb-6 border-b border-border-subtle">
-                  <h3 className="text-subhead font-medium text-text-primary mb-3">
-                    Document Assembly
-                  </h3>
-                  <p className="text-body text-text-secondary leading-relaxed">
-                    Collection of base policy wording, all schedules, endorsements, and incorporated
-                    Institute Clauses. Verification that all referenced documents are complete
-                    and properly executed.
-                  </p>
-                </div>
-
-                <div className="pb-6 border-b border-border-subtle">
-                  <h3 className="text-subhead font-medium text-text-primary mb-3">
-                    Coverage Mapping
-                  </h3>
-                  <p className="text-body text-text-secondary leading-relaxed">
-                    Isolation of each coverage grant with specific clause references. Documentation
-                    of trigger conditions, territorial limits, deductibles, and sublimits.
-                    Cross-reference to standard market forms.
-                  </p>
-                </div>
-
-                <div className="pb-6 border-b border-border-subtle">
-                  <h3 className="text-subhead font-medium text-text-primary mb-3">
-                    Exclusion Analysis
-                  </h3>
-                  <p className="text-body text-text-secondary leading-relaxed">
-                    Systematic review of all exclusion clauses. Assessment of exclusion scope,
-                    exceptions to exclusions, and interaction with warranty provisions.
-                    Citation to relevant case law interpreting similar language.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-subhead font-medium text-text-primary mb-3">
-                    Warranty Evaluation
-                  </h3>
-                  <p className="text-body text-text-secondary leading-relaxed">
-                    Identification of all warranty conditions. Determination of whether warranties
-                    are suspensive or promissory. Documentation of breach consequences and
-                    coverage reinstatement requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Section 3 */}
-            <div className="border-t border-border-subtle pt-12">
-              <h2 className="font-display text-heading font-normal text-text-primary mb-8">
-                Documentation Standards
-              </h2>
-              <div className="space-y-6 max-w-3xl">
-                <p className="text-body text-text-body leading-relaxed">
-                  Each analysis document includes a reference index citing specific policy provisions,
-                  relevant case decisions, and applicable Institute Clauses. Technical terminology
-                  follows Lloyd&apos;s Market Association definitions and International Union of Marine
-                  Insurance conventions.
-                </p>
-                <p className="text-body text-text-body leading-relaxed">
-                  Vessel-specific considerations reference classification society rules (ABS, Lloyd&apos;s
-                  Register, DNV) and flag state regulatory requirements. All recommendations are
-                  accompanied by direct source citations and, where applicable, relevant sections
-                  of the Marine Insurance Act 1906 or applicable jurisdiction&apos;s marine insurance legislation.
-                </p>
-              </div>
-            </div>
-
-            {/* Section 4 */}
-            <div className="border-t border-border-subtle pt-12">
-              <h2 className="font-display text-heading font-normal text-text-primary mb-8">
-                Scope Limitations
-              </h2>
-              <div className="space-y-6 max-w-3xl">
-                <p className="text-body text-text-body leading-relaxed">
-                  Analysis is limited to policy interpretation and risk documentation. No legal
-                  advice is provided. For questions of coverage application to specific claims
-                  or disputes, consultation with maritime legal counsel is recommended.
-                </p>
-                <p className="text-body text-text-body leading-relaxed">
-                  All work is conducted independently. No affiliations exist with insurance carriers,
-                  brokers, or underwriting syndicates. Assessments are based solely on policy
-                  documentation and established marine insurance principles. No commissions or
-                  referral fees are accepted from any insurance market participants.
-                </p>
-              </div>
+            <h1 className="font-display text-4xl font-light text-text-primary mb-2">
+              Methodology
+            </h1>
+            <div className="text-body text-text-secondary">
+              Policy Review Protocol and Documentation Standards
             </div>
           </div>
         </section>
+
+        {/* Document Body */}
+        <div className="max-w-4xl mx-auto px-8 py-12">
+
+          {/* Table of Contents */}
+          <section className="mb-12 pb-8 border-b border-border-subtle">
+            <div className="text-caption text-text-tertiary uppercase tracking-wider mb-4">
+              Contents
+            </div>
+            <div className="space-y-2 text-body">
+              <div><Link href="#section-1" className="text-text-secondary hover:text-text-primary">1. Scope</Link></div>
+              <div><Link href="#section-2" className="text-text-secondary hover:text-text-primary">2. Document Assembly</Link></div>
+              <div><Link href="#section-3" className="text-text-secondary hover:text-text-primary">3. Coverage Mapping</Link></div>
+              <div><Link href="#section-4" className="text-text-secondary hover:text-text-primary">4. Exclusion Analysis</Link></div>
+              <div><Link href="#section-5" className="text-text-secondary hover:text-text-primary">5. Warranty Evaluation</Link></div>
+              <div><Link href="#section-6" className="text-text-secondary hover:text-text-primary">6. Documentation Standards</Link></div>
+              <div><Link href="#section-7" className="text-text-secondary hover:text-text-primary">7. Limitations</Link></div>
+            </div>
+          </section>
+
+          {/* 1. Scope */}
+          <section id="section-1" className="mb-10">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">1.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Scope
+              </h2>
+            </div>
+            <div className="pl-10">
+              <p className="text-body text-text-secondary leading-relaxed mb-4">
+                This methodology applies to analysis of yacht insurance policies including:
+              </p>
+              <ul className="text-body text-text-secondary space-y-1 list-none">
+                <li>1.1 Hull and machinery coverage</li>
+                <li>1.2 Protection and indemnity</li>
+                <li>1.3 Crew liability</li>
+                <li>1.4 Charter arrangements</li>
+                <li>1.5 Loss of hire provisions</li>
+              </ul>
+            </div>
+          </section>
+
+          {/* 2. Document Assembly */}
+          <section id="section-2" className="mb-10">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">2.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Document Assembly
+              </h2>
+            </div>
+            <div className="pl-10 space-y-4">
+              <div>
+                <span className="text-caption text-text-tertiary">2.1</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Collect base policy wording, all schedules, and endorsements.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">2.2</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Identify incorporated Institute Clauses by reference number.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">2.3</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Verify document completeness and execution status.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">2.4</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Note any manuscript amendments or bespoke clauses.
+                </span>
+              </div>
+            </div>
+          </section>
+
+          {/* 3. Coverage Mapping */}
+          <section id="section-3" className="mb-10">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">3.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Coverage Mapping
+              </h2>
+            </div>
+            <div className="pl-10 space-y-4">
+              <div>
+                <span className="text-caption text-text-tertiary">3.1</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Isolate each coverage grant with specific clause references.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">3.2</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Document trigger conditions for each coverage element.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">3.3</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Record territorial limits, navigational warranties, and trading areas.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">3.4</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Note deductibles, sublimits, and aggregate caps.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">3.5</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Cross-reference to standard market forms where applicable.
+                </span>
+              </div>
+            </div>
+          </section>
+
+          {/* 4. Exclusion Analysis */}
+          <section id="section-4" className="mb-10">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">4.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Exclusion Analysis
+              </h2>
+            </div>
+            <div className="pl-10 space-y-4">
+              <div>
+                <span className="text-caption text-text-tertiary">4.1</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Catalogue all exclusion clauses by category.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">4.2</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Assess exclusion scope and any exceptions to exclusions.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">4.3</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Evaluate interaction between exclusions and warranty provisions.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">4.4</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Compare to Institute Yacht Clauses baseline.
+                </span>
+              </div>
+            </div>
+          </section>
+
+          {/* 5. Warranty Evaluation */}
+          <section id="section-5" className="mb-10">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">5.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Warranty Evaluation
+              </h2>
+            </div>
+            <div className="pl-10 space-y-4">
+              <div>
+                <span className="text-caption text-text-tertiary">5.1</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Identify all express warranties.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">5.2</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Determine warranty type: suspensive or promissory.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">5.3</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Document breach consequences per Insurance Act 2015 s.10-11.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">5.4</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Note coverage reinstatement requirements.
+                </span>
+              </div>
+            </div>
+          </section>
+
+          {/* 6. Documentation Standards */}
+          <section id="section-6" className="mb-10">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">6.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Documentation Standards
+              </h2>
+            </div>
+            <div className="pl-10 space-y-4">
+              <div>
+                <span className="text-caption text-text-tertiary">6.1</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Reference index citing specific policy provisions.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">6.2</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Terminology per Lloyd&apos;s Market Association definitions.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">6.3</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Classification society rules where vessel-specific (ABS, Lloyd&apos;s Register, DNV).
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">6.4</span>
+                <span className="text-body text-text-secondary ml-3">
+                  No interpretation without direct citation.
+                </span>
+              </div>
+            </div>
+          </section>
+
+          {/* 7. Limitations */}
+          <section id="section-7" className="mb-10">
+            <div className="flex gap-4 mb-4">
+              <span className="text-caption text-text-tertiary font-medium w-6">7.</span>
+              <h2 className="text-label font-medium text-text-primary uppercase tracking-wider">
+                Limitations
+              </h2>
+            </div>
+            <div className="pl-10 space-y-4">
+              <div>
+                <span className="text-caption text-text-tertiary">7.1</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Analysis limited to policy interpretation and documentation.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">7.2</span>
+                <span className="text-body text-text-secondary ml-3">
+                  No legal advice provided.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">7.3</span>
+                <span className="text-body text-text-secondary ml-3">
+                  For coverage application to specific claims, consult maritime legal counsel.
+                </span>
+              </div>
+              <div>
+                <span className="text-caption text-text-tertiary">7.4</span>
+                <span className="text-body text-text-secondary ml-3">
+                  Independent work. No affiliations with carriers, brokers, or syndicates.
+                </span>
+              </div>
+            </div>
+          </section>
+
+          {/* Back link */}
+          <div className="mt-12 pt-8 border-t border-border-subtle">
+            <Link
+              href="/"
+              className="text-body text-text-secondary underline underline-offset-2 hover:text-text-primary"
+            >
+              ← Back to record
+            </Link>
+          </div>
+
+        </div>
       </main>
 
       <Footer />
