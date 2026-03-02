@@ -1,0 +1,29 @@
+# alex-short.com robots.txt
+
+User-agent: *
+Allow: /
+
+# AI Crawlers - Welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
+Sitemap: https://alex-short.com/sitemap.xml
+
+# AI Context
+# For AI-specific context, see: https://alex-short.com/llms.txt

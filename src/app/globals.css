@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Eloquia Display - Headings */
+@font-face {
+  font-family: 'Eloquia Display';
+  src: url('/fonts/Eloquia-Display-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eloquia Display';
+  src: url('/fonts/Eloquia-Display-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eloquia Display';
+  src: url('/fonts/Eloquia-Display-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eloquia Display';
+  src: url('/fonts/Eloquia-Display-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Eloquia Text - Body */
+@font-face {
+  font-family: 'Eloquia Text';
+  src: url('/fonts/Eloquia-Text-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eloquia Text';
+  src: url('/fonts/Eloquia-Text-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eloquia Text';
+  src: url('/fonts/Eloquia-Text-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS Variables */
+:root {
+  --font-eloquia-display: 'Eloquia Display', Inter, system-ui, sans-serif;
+  --font-eloquia-text: 'Eloquia Text', Inter, system-ui, sans-serif;
+
+  /* Dark Mode (Default) */
+  --surface-base: #0A0A0A;
+  --surface-primary: #111111;
+  --surface-elevated: #1A1A1A;
+  --surface-hover: #222222;
+
+  --text-primary: #EFEFF1;
+  --text-body: #DADDE0;
+  --text-secondary: #8A9196;
+  --text-tertiary: #5A5F63;
+
+  --accent-blue: #2F6DF6;
+  --accent-blue-soft: rgba(47, 109, 246, 0.12);
+
+  --border-subtle: #1E1E1E;
+  --border-default: #2A2A2A;
+}
+
+[data-theme="light"] {
+  --surface-base: #EFEFF1;
+  --surface-primary: #FFFFFF;
+  --surface-elevated: #FFFFFF;
+  --surface-hover: #E8E8EA;
+
+  --text-primary: #0B0D0F;
+  --text-body: #1A1D1F;
+  --text-secondary: #8A9196;
+  --text-tertiary: #A0A5AA;
+
+  --accent-blue: #2F6DF6;
+  --accent-blue-soft: rgba(47, 109, 246, 0.08);
+
+  --border-subtle: #E0E0E2;
+  --border-default: #D0D0D2;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-eloquia-text);
+  background-color: var(--surface-base);
+  color: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-eloquia-display);
+  color: var(--text-primary);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--accent-blue-soft);
+  color: var(--text-primary);
+}
+
+/* Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* Link Base */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: opacity 150ms ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
